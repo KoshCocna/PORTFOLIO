@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>我的文件夹</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href='https://fonts.googleapis.com/css?family=Noto Serif SC' rel='stylesheet'>
+		<style>
+			.chiBigSC {
+				font-family: 'Noto Serif SC';font-size: 22px;
+			}
+			.chiExBigSC {
+				font-family: 'Noto Serif SC';font-size: 32px;
+			}
+			.chiMidSC {
+				font-family: 'Noto Serif SC';font-size: 16px;
+			}
+			.chiLitSC {
+				font-family: 'Noto Serif SC';font-size: 12px;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1 class="chiBigSC">欢迎光临<br />
+						我的文件夹</h1>
+						<p class="chiMidSC">这里您可以了解我的个人信息和我的业务能力.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="chinese.html" class="logo" class="chiMidSC">主窗口</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#main" class="chiLitSC">自我介绍</a></li>
+							<li><a href="projectsChi.html" class="chiLitSC">我的项目</a></li>
+							<li><a href="plansChi.html" class="chiLitSC">未来计划</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="index.html"><span class="label">English</span></a></li>
+							<li><a href="russian.html"><span class="label">Русский</span></a></li>
+							<li><a href="chinese.html"><span class="label">中文</span></a></li>
+							<li><a href="korean.html"><span class="label">조선어</span></a></li>
+							<li><a href="https://github.com/KoshCocna" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<p class="chiMidSC">日子, 时间: <span id="datetime"></span></p>
+									<script>var dt = new Date();
+										document.getElementById("datetime").innerHTML=dt.toLocaleString();
+									</script> 
+									<h2><a href="#main" class="chiExBigSC">自我介绍</a></h2>
+									<p class="chiMidSC">嗨！我是远东联防大学的3年级学生Kimich。我今年24岁。
+									我喜欢学习软件设计及开发，网络软件开发(前端开发，后端开发，全栈开发)，数据库管理还有
+									DSP及数字滤波器的设计(MATLAB)，天线设计(ANSYS HFSS)，3D 设计软件(AutoCAD，Fusion 360，SOLIDWORKS)和机器人学。目前我在我们大学里的项目活动中心参加制造导游机器人的项目。
+									我最近很深地学习 Python，C++，C#(.NET)等语言还有我打算以后还学习 PHP，Java，Kotlin，Golang，Scala等别的语言。  
+									</p>
+								</header>
+								<h2 class="chiBigSC">来吧！我们来一起创造更好的未来吧！</h2>
+								<a class="image main"><img src="images/mainpic (1).jpg" id="imgClickAndChange" alt=""/></a>
+								<script language="javascript">
+									var imgState = 0;
+									var imgTag = document.getElementById("imgClickAndChange");
+									imgTag.addEventListener("click", function (event) {
+										var images = ["images/mainpic (1).jpg", "images/mainpic (2).jpg", "images/mainpic (3).jpg", "images/mainpic (4).jpg","images/mainpic (5).jpg","images/mainpic (6).jpg","images/mainpic (7).jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+									});
+								</script>
+							    
+								<ul class="actions special">
+									<li><a class="button large" href="#footer"><p class="chiBigSC">联系方式</p></a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">2021年 11月7日</span>
+										<h2><a class="chiBigSC">我喜欢机器人!&#128515</a></h2>
+									</header>
+									<a class="image fit"><img src="images/pic02.jpg" id="imgClickAndChangePost" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/pic02.jpg", "images/pic2_1.jpg","images/pic2_2.jpg","images/pic2_3.jpg","images/pic2_4.jpg","images/pic2_5.jpg","images/pic2_6.jpg","images/pic2_7.jpg", "images/pic02_1.jpg","images/pic02_2.jpg","images/pic02_3.jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p class="chiMidSC">我喜欢机器人！随着机器人技术在我们日常生活中的应用，它使我们的日常任务变得容易和方便，既节省了人类的努力，又减少了我们工作上的失误和缺陷， 带来了莫大的利益。</p>
+									<ul class="actions special">
+										<li><a class="button"><p class="chiMidSC" id="btn4" onclick="clickedbtn('btn4')">编辑</p></a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">2021年 10月28日</span>
+										<h2><a class="chiBigSC">我们的校园&#128522</a></h2>
+									</header>
+									<a class="image fit"><img src="images/post03 (1).jpg" id="imgClickAndChangePost3" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost3");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/post03 (1).jpg", "images/post03 (2).jpg","images/post03 (3).jpg","images/post03 (4).jpg","images/post03 (5).jpg","images/post03 (6).jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p class="chiMidSC">远东联防大学是一个独特的“知识界”。漂亮的校园，被提供的丰富的最新教育和研究机会是让他拿到世界级大学的称号。 我个人认为我们学校的校园是世界上最美的校园之一。</p>
+									<ul class="actions special">
+										<li><a class="button"><p class="chiMidSC" id="btn3" onclick="clickedbtn('btn3')">编辑</p></a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">2021年 9月4日</span>
+										<h2><a class="chiBigSC">东方经济会议&#128525</a></h2>
+									</header>
+									<a class="image fit"><img src="images/pic03 (1).jpeg" id="imgClickAndChangePost2" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost2");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/pic03 (1).jpeg", "images/pic03 (2).jpeg","images/pic03 (3).jpeg","images/pic03 (4).jpeg","images/pic03 (5).jpeg","images/pic03 (6).jpeg","images/pic03 (7).jpeg","images/pic03 (8).jpeg", "images/pic03 (9).jpeg","images/pic03 (10).jpeg","images/pic03 (11).jpeg", "images/pic03 (12).jpeg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p class="chiMidSC">第六届东方经济论坛已于2021年9月2-4日在符拉迪沃斯托克远东联邦大学校园举行。 我的几个朋友也参加了以这个论坛的志愿者的身份。</p>
+									<ul class="actions special">
+										<li><a class="button"><p class="chiMidSC" id="btn2" onclick="clickedbtn('btn2')">编辑</p></a></li>
+									</ul>
+								</article>
+								
+								<article>
+									<header>
+										<span class="date">2021年 8月20日</span>
+										<h2><a class="chiBigSC">海参管，我爱你!&#128521</a></h2>
+									</header>
+									<a class="image fit"><img src="images/post04 (1).jpg" id="imgClickAndChangePost4" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost4");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/post04 (1).jpg", "images/post04 (2).jpg","images/post04 (3).jpg","images/post04 (4).jpg","images/post04 (5).jpg","images/post04 (6).jpeg", "images/post04 (7).jpeg", "images/post04 (8).jpeg", "images/post04 (9).jpeg", "images/post04 (10).jpeg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p class="chiMidSC">海参管是在于俄罗斯远东地区的港口城市。它是很美丽的城市，城市里面或者很美丽的人们。有趣的是这城市的名字是意味着征服东方</p>
+									<ul class="actions special">
+										<li><a class="button"><p class="chiMidSC" id="btn1" onclick="clickedbtn('btn1')">编辑</p></a></li>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">下一页</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name" class="chiMidSC">名字</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email" class="chiMidSC">电子邮件</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message" class="chiMidSC">写信</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="发送信息" /></li>
+								</ul>
+							</form>
+						</section>
+						
+						<section class="split contact">
+							<section class="alt">
+								<h3 class="chiMidSC">地址</h3>
+								<p class="chiMidSC">俄罗斯，海参管，联防大学校园 <br><br /></p>
+							</section>
+							<section>
+								<h3 class="chiMidSC">电话号码</h3>
+								<p><a>+7(914) xxx-xxxx</a></p>
+							</section>
+							<section>
+								<h3 class="chiMidSC">电子邮件</h3>
+								<p><a href="#">xxx@gmail.com</a></p>
+							</section>
+							<section>
+								<h3 class="chiMidSC">朋友圈</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/applepie_rasberry/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/KoshCocna" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="chiMidSC"><li>&copy; 文件夹</li><li> <a href="#">Kimich</a>的网站 </li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function clickedbtn(btn_id){
+					document.getElementById(btn_id).innerHTML = "无权!";
+					function sleep (time) {
+						return new Promise((resolve) => setTimeout(resolve, time));
+					}
+					sleep(1000).then(() => {
+						document.getElementById(btn_id).innerHTML = "编辑";
+					});
+				}
+			</script>
+
+	</body>
+</html>

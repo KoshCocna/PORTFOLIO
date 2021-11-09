@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>MY PORTFOLIO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Welcome<br />
+						to My Portfolio</h1>
+						<p>Here you can see some information about me and my projects.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="#" class="logo">Main</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#main">Introduction</a></li>
+							<li><a href="projects.html">My Projects</a></li>
+							<li><a href="plans.html">Plans</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="index.html"><span class="label">English</span></a></li>
+							<li><a href="russian.html"><span class="label">Русский</span></a></li>
+							<li><a href="chinese.html"><span class="label">中文</span></a></li>
+							<li><a href="korean.html"><span class="label">조선어</span></a></li>
+							<li><a href="https://github.com/KoshCocna" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<p>Date, Time: <span id="datetime"></span></p>
+									<script>var dt = new Date();
+										document.getElementById("datetime").innerHTML=dt.toLocaleString();
+									</script> 
+									<h2><a href="#main">Introduction</a></h2>
+									<p>Hi, Kimich here! I am 24 years old and studying at FEFU (FarEastern Federal University) in Russia.<br /> I am a self-driven and a self-motivated student.
+									My interests are in Software Design and Development, Web Developing (Front-End Developing, Back-End Developing, Full-Stack Developing), Database Administration and
+									DSP & Designing digital filters (MATLAB), Designing antennas (ANSYS HFSS), Engineering & Design Software (AutoCAD, Fusion 360, SOLIDWORKS) and Robotics.
+									I am working at the center of project activities in my university as a member of Robotics team and now we are developing a Tour-guide robot "Ego". 
+									Now I am learning Python, C++, C#(.NET) in depth and going to learn the other languages such as PHP, Java, Kotlin, Golang, Scala in the future.  
+									</p>
+								</header>
+								<h2>Let's make the world better place with me!</h2>
+								
+								<a class="image main"><img src="images/mainpic (1).jpg" id="imgClickAndChange" alt=""/></a>
+								<script language="javascript">
+									var imgState = 0;
+									var imgTag = document.getElementById("imgClickAndChange");
+									imgTag.addEventListener("click", function (event) {
+										var images = ["images/mainpic (1).jpg", "images/mainpic (2).jpg", "images/mainpic (3).jpg", "images/mainpic (4).jpg","images/mainpic (5).jpg","images/mainpic (6).jpg","images/mainpic (7).jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+									});
+								</script>
+							    
+								<ul class="actions special">
+									<li><a class="button large" href="#footer">SEND ME MESSAGE</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">November 07, 2021</span>
+										<h2><a>I Love Robotics!&#128515</a></h2>
+									</header>
+									<a class="image fit"><img src="images/pic02.jpg" id="imgClickAndChangePost" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/pic02.jpg", "images/pic2_1.jpg","images/pic2_2.jpg","images/pic2_3.jpg","images/pic2_4.jpg","images/pic2_5.jpg","images/pic2_6.jpg","images/pic2_7.jpg", "images/pic02_1.jpg","images/pic02_2.jpg","images/pic02_3.jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p>I love Robotics! With the uses of Robotics in our daily lives, it has made our everyday tasks easy and convenient to perform saving human energy and efforts while reducing the human errors and ignorance at times.</p>
+									<ul class="actions special">
+										<li><a class="button" id="btn1" onclick="clickedbtn('btn1')">Edit</a></li>
+										
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">October 28, 2021</span>
+										<h2><a>Our Campus at FEFU&#128522</a></h2>
+									</header>
+									<a class="image fit"><img src="images/post03 (1).jpg" id="imgClickAndChangePost3" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost3");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/post03 (1).jpg", "images/post03 (2).jpg","images/post03 (3).jpg","images/post03 (4).jpg","images/post03 (5).jpg","images/post03 (6).jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p>FEFU is a unique intellectual community. Based at a campus with world-class infrastructure, our faculty provide innovative educational and research opportunities. I think it has the most beautiful campus.</p>
+									<ul class="actions special">
+										<li><a class="button" id="btn2" onclick="clickedbtn('btn2')">Edit</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">September 04, 2021</span>
+										<h2><a>Eastern Economic Forum&#128525</a></h2>
+									</header>
+									<a class="image fit"><img src="images/pic03 (1).jpeg" id="imgClickAndChangePost2" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost2");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/pic03 (1).jpeg", "images/pic03 (2).jpeg","images/pic03 (3).jpeg","images/pic03 (4).jpeg","images/pic03 (5).jpeg","images/pic03 (6).jpeg","images/pic03 (7).jpeg","images/pic03 (8).jpeg", "images/pic03 (9).jpeg","images/pic03 (10).jpeg","images/pic03 (11).jpeg", "images/pic03 (12).jpeg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p>The 6th Eastern Economic Forum 2021 has taken place on 2–4 September 2021 in Vladivostok on the Far Eastern Federal University (FEFU) campus. My several friends worked as volunteer for this forum.</p>
+									<ul class="actions special">
+										<li><a class="button" id="btn3" onclick="clickedbtn('btn3')">Edit</a></li>
+									</ul>
+								</article>
+								
+								<article>
+									<header>
+										<span class="date">August 20, 2021</span>
+										<h2><a>Vladivostok! I love you!&#128521</a></h2>
+									</header>
+									<a class="image fit"><img src="images/post04 (1).jpg" id="imgClickAndChangePost4" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost4");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/post04 (1).jpg", "images/post04 (2).jpg","images/post04 (3).jpg","images/post04 (4).jpg","images/post04 (5).jpg","images/post04 (6).jpeg", "images/post04 (7).jpeg", "images/post04 (8).jpeg", "images/post04 (9).jpeg", "images/post04 (10).jpeg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p>Vladivostok is a city and port in the Russian Far East. It's a beautiful city with beautiful people. I heard the name "Vladivostok" is derived from the words "possess" and "East". Huh, interesting!</p>
+									<ul class="actions special">
+										<li><a class="button" id="btn4" onclick="clickedbtn('btn4')">Edit</a></li>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Your Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Your Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Campus FEFU, Vladivostok, Russia <br><br /></p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a>+7(914) xxx-xxxx</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">xxx@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/applepie_rasberry/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/KoshCocna" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; PORTFOLIO</li><li>Designed by: <a href="#">Kimich</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function clickedbtn(btn_id){
+					document.getElementById(btn_id).innerHTML = "No Access!";
+					function sleep (time) {
+						return new Promise((resolve) => setTimeout(resolve, time));
+					}
+					sleep(1000).then(() => {
+						document.getElementById(btn_id).innerHTML = "Edit";
+					});
+				}
+			</script>
+
+	</body>
+</html>

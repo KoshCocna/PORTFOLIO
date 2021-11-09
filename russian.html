@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Мое Портфолио</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+			<div id="wrapper" class="fade-in">
+
+					<div id="intro">
+						<h1>Добро пожаловать<br />
+						В моё портфолио!</h1>
+						<p>Здесь можете прочитать моё инфо и мои проекты.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+					<header id="header">
+						<a href="#" class="logo">Главная</a>
+					</header>
+
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#main">Представление</a></li>
+							<li><a href="projectsRus.html">Мои проекты</a></li>
+							<li><a href="plansRus.html">будущие планы</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="index.html"><span class="label">English</span></a></li>
+							<li><a href="russian.html"><span class="label">Русский</span></a></li>
+							<li><a href="chinese.html"><span class="label">中文</span></a></li>
+							<li><a href="korean.html"><span class="label">조선어</span></a></li>
+							<li><a href="https://github.com/KoshCocna" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<p>Дата, Время: <span id="datetime"></span></p>
+									<script>var dt = new Date();
+										document.getElementById("datetime").innerHTML=dt.toLocaleString();
+									</script> 
+									<h2><a href="#main">Представление</a></h2>
+									<p>Привет, Это Кимычи! Мне 24 года. Я учусь в ДВФУ (Дальневосточный федеральный университет)<br/> Я самостоятельный, целеустремленный и ответственный человек.
+                                        Я занимаюсь следующими: проектирование и разработка ПО, веб разработка (Front-End разработка, Back-End разработка, Full-Stack разработка), Администрирование БД и
+                                        ЦОС и проектирование цифровых фильтров (MATLAB), проектирование антенн (ANSYS HFSS), 3D-моделирование (AutoCAD, Fusion 360, SOLIDWORKS) и робототехникой.
+                                        Сейчас я углубленно изучаю Python, C++, C#(.NET) и собираюсь в будущем изучать другие языки прогромирований, такие как PHP, Java, Kotlin, Golang, Scala. 
+                                    </p>
+								</header>
+								<h2>Сделаем наш мир лучшим со мной!</h2>
+								<a class="image main"><img src="images/mainpic (1).jpg" id="imgClickAndChange" alt=""/></a>
+								<script language="javascript">
+									var imgState = 0;
+									var imgTag = document.getElementById("imgClickAndChange");
+									imgTag.addEventListener("click", function (event) {
+										var images = ["images/mainpic (1).jpg", "images/mainpic (2).jpg", "images/mainpic (3).jpg", "images/mainpic (4).jpg","images/mainpic (5).jpg","images/mainpic (6).jpg","images/mainpic (7).jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+									});
+								</script>
+							    
+								<ul class="actions special">
+									<li><a class="button large" href="#footer">Писать сообщение</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">07 Ноября, 2021</span>
+										<h2><a>Я люблю робот!&#128515</a></h2>
+									</header>
+									<a class="image fit"><img src="images/pic02.jpg" id="imgClickAndChangePost" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/pic02.jpg", "images/pic2_1.jpg","images/pic2_2.jpg","images/pic2_3.jpg","images/pic2_4.jpg","images/pic2_5.jpg","images/pic2_6.jpg","images/pic2_7.jpg", "images/pic02_1.jpg","images/pic02_2.jpg","images/pic02_3.jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p>Я люблю роботы и робототехнику! В современной жизни, использование роботов очень упрощает наши трудные задани, экономит человеческую энергию и усилия и сокращает количество человеческих ошибок и невежества.</p>
+									<ul class="actions special">
+										<li><a class="button" id="btn4" onclick="clickedbtn('btn4')">Редактировать</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">28 Октября, 2021</span>
+										<h2><a>Наш кампус ДВФУ&#128522</a></h2>
+									</header>
+									<a class="image fit"><img src="images/post03 (1).jpg" id="imgClickAndChangePost3" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost3");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/post03 (1).jpg", "images/post03 (2).jpg","images/post03 (3).jpg","images/post03 (4).jpg","images/post03 (5).jpg","images/post03 (6).jpg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p>ДВФУ - Это уникальное интеллектуальное сообщество. Расположен в кампусе с инфраструктурой мирового класса, факультеты предоставляют инновационные образовательные и исследовательские возможности. Я люблю тебя!</p>
+									<ul class="actions special">
+										<li><a class="button" id="btn3" onclick="clickedbtn('btn3')">Редактировать</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">04 Сентября, 2021</span>
+										<h2><a>Вау! ВЭФ&#128525</a></h2>
+									</header>
+									<a class="image fit"><img src="images/pic03 (1).jpeg" id="imgClickAndChangePost2" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost2");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/pic03 (1).jpeg", "images/pic03 (2).jpeg","images/pic03 (3).jpeg","images/pic03 (4).jpeg","images/pic03 (5).jpeg","images/pic03 (6).jpeg","images/pic03 (7).jpeg","images/pic03 (8).jpeg", "images/pic03 (9).jpeg","images/pic03 (10).jpeg","images/pic03 (11).jpeg", "images/pic03 (12).jpeg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p>Шестой Восточный экономический форум состоялся 2-4 сентября 2021-го года во Владивостоке на территории кампуса Дальневосточного федерального университета. Несколько моих друзей работали волонтерами на этом форуме.</p>
+									<ul class="actions special">
+										<li><a class="button" id="btn2" onclick="clickedbtn('btn2')">Редактировать</a></li>
+									</ul>
+								</article>
+								
+								<article>
+									<header>
+										<span class="date">20 Августа, 2021</span>
+										<h2><a>Владивосток!&#128521</a></h2>
+									</header>
+									<a class="image fit"><img src="images/post04 (1).jpg" id="imgClickAndChangePost4" alt="" /></a>
+									<script language="javascript">
+										var imgState = 0;
+										var imgTag = document.getElementById("imgClickAndChangePost4");
+										imgTag.addEventListener("click", function (event) {
+										var images = ["images/post04 (1).jpg", "images/post04 (2).jpg","images/post04 (3).jpg","images/post04 (4).jpg","images/post04 (5).jpg","images/post04 (6).jpeg", "images/post04 (7).jpeg", "images/post04 (8).jpeg", "images/post04 (9).jpeg", "images/post04 (10).jpeg"]
+										imgState = (++imgState % images.length);
+										event.target.src = images[imgState];
+										});
+									</script>
+									<p>Владивосток - город и порт на Дальнем Востоке России. Это прекрасный город с прекрасными людьми. Я слышал, что название "Владивосток" происходит от слов "владеть" и "Восток". То есть название означает что "владеть Востоком" Хм, интересно!</p>
+									<ul class="actions special">
+										<li><a class="button" id="btn1" onclick="clickedbtn('btn1')">Редактировать</a></li>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">следующая</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Ваше имя</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Ваш Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">сообщение</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Отправить" /></li>
+								</ul>
+							</form>
+						</section>
+						
+						<section class="split contact">
+							<section class="alt">
+								<h3>Адрес</h3>
+								<p>Кампус ДВФУ, Владивосток, Россия <br><br /></p>
+							</section>
+							<section>
+								<h3>Телефон</h3>
+								<p><a>+7(914) xxx-xxxx</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">xxx@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>СМИ</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/applepie_rasberry/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/KoshCocna" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; ПОРТФОЛИО</li><li>Создал <a href="#">Кимычи</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function clickedbtn(btn_id){
+					document.getElementById(btn_id).innerHTML = "Нет Права!";
+					function sleep (time) {
+						return new Promise((resolve) => setTimeout(resolve, time));
+					}
+					sleep(1000).then(() => {
+						document.getElementById(btn_id).innerHTML = "Редактировать";
+					});
+				}
+			</script>
+
+	</body>
+</html>
